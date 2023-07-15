@@ -12,6 +12,10 @@ people["Johni"] = []
 
 
 def BFS(abstractGraph: dict, startKey):
+    """O(|E| + |C|
+    C = count of people
+    E = count of edges"""
+
     search_queue = deque()
     search_queue += abstractGraph[startKey]
     visited = []
