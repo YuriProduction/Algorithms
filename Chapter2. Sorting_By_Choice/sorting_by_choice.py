@@ -20,3 +20,5 @@ def sort_by_choice(arr: list):
 
 arr = [7, 5, 9, 2, 3, 1, 11, 17]
 print(sort_by_choice(arr))
+
+
