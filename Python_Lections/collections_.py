@@ -20,3 +20,22 @@ print((1, 2, 4) > (1, 2, 3, 4))  # сначала по первой коорди
 temp_list = [(1, 2), (1, 3), (2, 2)]
 temp_list.sort(key=lambda x: (x[1], x[0]), reverse=True)
 print(temp_list)
+arr.reverse()
+print(arr)
+del arr[0]
+print(arr)
+from collections import defaultdict
+
+g = {'b': {'c'}, 'a': {'b'}}
+g['b'].add('a')
+print(g)
+# g['c'].add('a') #KeyError
+g = defaultdict(set, {'b': {'c'}, 'a': {'b'}})
+g['c'].add('a')
+# как раз если значение отсутствует все будет норм
+print(g)
+from collections import Counter
+
+c = Counter(["1", "1", "1", "2"])
+c["1"] += 1
+print(c)
